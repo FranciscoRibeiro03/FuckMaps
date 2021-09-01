@@ -1,0 +1,45 @@
+{
+  "sharedDir": "shared",
+  "dependenciesDir": "extern",
+  "info": {
+    "name": "FuckMaps",
+    "id": "fuckmaps",
+    "version": "1.0.0-rc.1",
+    "url": null,
+    "additionalData": {
+      "overrideSoName": "libfuckmaps.so"
+    }
+  },
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "versionRange": "^2.2.5",
+      "additionalData": {
+        "extraFiles": [
+          "src/inline-hook"
+        ]
+      }
+    },
+    {
+      "id": "codegen",
+      "versionRange": "^0.12.5",
+      "additionalData": {}
+    },
+    {
+      "id": "custom-types",
+      "versionRange": "^0.12.6",
+      "additionalData": {}
+    },
+    {
+      "id": "questui",
+      "versionRange": "^0.10.2",
+      "additionalData": {}
+    },
+    {
+      "id": "config-utils",
+      "versionRange": "^0.5.1",
+      "additionalData": {}
+    }
+  ],
+  "additionalData": {}
+}
