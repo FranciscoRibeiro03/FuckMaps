@@ -1,6 +1,6 @@
 # FuckMaps
 
-This map crashes your game if you play a song below or above a configurable BPM.
+This mod crashes your game if you play a song below or above a configurable BPM.
 
 ## Credits
 
