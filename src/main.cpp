@@ -97,6 +97,7 @@ extern "C" void load() {
 
     custom_types::Register::AutoRegister();
     QuestUI::Register::RegisterModSettingsViewController<FuckMaps::SettingsViewController*>(modInfo, "FuckMaps");
+    QuestUI::Register::RegisterMainMenuModSettingsViewController<FuckMaps::SettingsViewController*>(modInfo, "FuckMaps");
 
     getLogger().info("Installing hooks...");
     INSTALL_HOOK(getLogger(), PressPracticeButton);
