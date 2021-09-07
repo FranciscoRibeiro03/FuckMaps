@@ -1,6 +1,7 @@
 #include "main.hpp"
 #include "Config/ModConfig.hpp"
 #include "UI/SettingsViewController.hpp"
+#include "UI/ModifiersMenu.hpp"
 
 #include "GlobalNamespace/LevelSelectionNavigationController.hpp"
 #include "GlobalNamespace/LevelCollectionNavigationController.hpp"
@@ -98,6 +99,7 @@ extern "C" void load() {
     custom_types::Register::AutoRegister();
     QuestUI::Register::RegisterModSettingsViewController<FuckMaps::SettingsViewController*>(modInfo, "FuckMaps");
     QuestUI::Register::RegisterMainMenuModSettingsViewController<FuckMaps::SettingsViewController*>(modInfo, "FuckMaps");
+    QuestUI::Register::RegisterGameplaySetupMenu<FuckMaps::ModifiersMenu*>(modInfo, "FuckMaps");
 
     getLogger().info("Installing hooks...");
     INSTALL_HOOK(getLogger(), PressPracticeButton);
