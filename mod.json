@@ -3,14 +3,14 @@
   "name": "FuckMaps",
   "id": "fuckmaps",
   "author": "rui2015",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.2",
   "packageId": "com.beatgames.beatsaber",
-  "packageVersion": "1.16.4",
+  "packageVersion": "1.17.0",
   "description": "This mod crashes your game if you play a song below or above a configurable BPM.",
   "modFiles": [
     "libfuckmaps.so"
   ],
   "libraryFiles": [
-    "libbeatsaber-hook_2_2_5.so"
+    "libbeatsaber-hook_2_3_0.so"
   ]
 }
