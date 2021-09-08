@@ -3,6 +3,7 @@
 #include "Config/ModConfig.hpp"
 
 #include "questui/shared/BeatSaberUI.hpp"
+#include "UnityEngine/UI/VerticalLayoutGroup.hpp"
 
 DEFINE_TYPE(FuckMaps, SettingsViewController);
 using namespace FuckMaps;
@@ -34,6 +35,7 @@ void SettingsViewController::DidActivate(bool firstActivation, bool addedToHiera
         getLogger().info("Creating UI options");
 
         auto layout = QuestUI::BeatSaberUI::CreateVerticalLayoutGroup(get_transform());
+        layout->GetComponent<UnityEngine::UI::ContentSizeFitter*>()->set_verticalFit(UnityEngine::UI::ContentSizeFitter::FitMode::PreferredSize);
 
         // Delegates
         auto onCrashHighBPMToggleDelegate = std::bind(onCrashHighBPMToggle, this, std::placeholders::_1);
