@@ -5,7 +5,7 @@
   "author": "rui2015",
   "version": "1.0.0-rc.2",
   "packageId": "com.beatgames.beatsaber",
-  "packageVersion": "1.17.0",
+  "packageVersion": "1.17.1",
   "description": "This mod crashes your game if you play a song below or above a configurable BPM.",
   "modFiles": [
     "libfuckmaps.so"
